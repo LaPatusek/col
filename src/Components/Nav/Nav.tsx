@@ -72,7 +72,7 @@ const Nav: React.FC = () => {
             </div>
 
             <div className={styles.link}>
-              <Link to='/'>Kontakt</Link>
+              <Link to='/kontakt'>Kontakt</Link>
             </div>
 
             <div className={styles.link}>
@@ -81,16 +81,16 @@ const Nav: React.FC = () => {
           </div>
 
           <div className={`${styles.socials} grid`} ref={thirdRef}>
-            <a href=''>
+            <a href='asd'>
               <Youtube color='#fff' size={iconSize} />
             </a>
-            <a href='' className={styles.youtube}>
+            <a href='asd' className={styles.youtube}>
               <Youtube size={iconSize} />
             </a>
-            <a href=''>
+            <a href='asd'>
               <Youtube color='#fff' size={iconSize} />
             </a>
-            <a href=''>
+            <a href='asd'>
               <Youtube color='#fff' size={iconSize} />
             </a>
           </div>
