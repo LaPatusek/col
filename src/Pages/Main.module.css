@@ -1,0 +1,37 @@
+.main {
+    scroll-behavior: smooth;
+}
+
+.main img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(0.55);
+  position: fixed;
+  z-index: -1;
+}
+
+.first-section {
+  padding: 10rem 0;
+}
+
+.first-section h1 {
+  font-size: 32px;
+  letter-spacing: 0.2px;
+  color: var(--text-gray);
+  text-transform: uppercase;
+  margin-bottom: 70px;
+  user-select: none;
+}
+
+.first-section p {
+  padding: 50px;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.4px;
+  color: var(--text-whity);
+  width: 75%;
+  margin: 0 auto;
+  background-color: #000;
+  border-bottom: 1px solid var(--text-gray);
+}

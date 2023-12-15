@@ -7,7 +7,6 @@ import styles from './Header.module.css';
 const Header: React.FC = () => {
   return (
     <div className={`${styles.header} relative`}>
-      <img src={background} height={'100%'} width={'100%'} alt='' />
       <h1>Zacznijmy roleplay od nowa</h1>
       <div className={styles['middle-box']}>
         <h2>
@@ -17,10 +16,16 @@ const Header: React.FC = () => {
         </h2>
       </div>
       <div className={styles['link-box']}>
-        <Link to={'/'}>
-            Dowiedz się więcej
-            <ArrowDown2 />
-        </Link>
+        <button
+          onClick={() =>
+            document
+              .getElementById('idea')
+              ?.scrollIntoView({ behavior: 'smooth' })
+          }
+        >
+          Dowiedz się więcej
+          <ArrowDown2 />
+        </button>
       </div>
     </div>
   );

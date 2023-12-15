@@ -1,4 +1,5 @@
 import { Fragment } from 'react';
+import { Route, Routes } from 'react-router-dom';
 import Footer from './Components/Footer/Footer';
 import Nav from './Components/Nav/Nav';
 import Main from './Pages/Main';
@@ -11,7 +12,11 @@ function App() {
       </nav>
 
       <main>
-        <Main />
+        <Routes>
+          <Route path='/' element={<Main />} />
+          <Route path='/main' element={<Main />} />
+          <Route path='*' element={<Main />} />
+        </Routes>
       </main>
 
       <footer>

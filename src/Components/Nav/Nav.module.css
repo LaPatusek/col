@@ -1,3 +1,110 @@
 .nav {
-    position: fixed;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 18;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  background-color: #000;
+  border-bottom: 2px solid var(--main-blue);
+  padding: 5px 15px;
+}
+
+.logo h1 {
+  font-size: 30px;
+  color: var(--text-whity);
+  user-select: none;
+}
+
+.hamburger {
+  color: var(--text-whity);
+  justify-self: right;
+  font-size: 30px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.hamburger svg {
+  transform: translateY(3.5px);
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: grid;
+  height: 100%;
+  width: 0%;
+  max-width: 420px;
+  background-color: #000;
+  border-left: 2px solid var(--main-blue);
+  grid-template-rows: 160px calc(100% - (160px + 66px)) 66px;
+  transition: all 600ms;
+}
+
+.active-menu {
+  width: 30%;
+}
+
+.exit-btn {
+  justify-self: right;
+  color: white;
+  font-size: 30px;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+.menu-links {
+  align-self: flex-start;
+  justify-content: center;
+  height: fit-content;
+  visibility: hidden;
+}
+
+.link {
+  padding: 5px 25px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid var(--text-gray);
+  transition: all 400ms;
+}
+
+.link:hover {
+  border-bottom: 1px solid var(--main-blue);
+}
+
+.link a {
+  font-size: 32px;
+  line-height: 40px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+.socials {
+  align-self: flex-end;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 10px;
+  border-top: 1px solid var(--text-gray);
+  visibility: hidden;
+}
+
+.visible-menu-item {
+  visibility: visible;
+}
+
+.socials a {
+  width: fit-content;
+  justify-self: center;
+}
+
+.socials svg {
+  justify-self: center;
+  cursor: pointer;
+  color: #fff;
+  transition: all 400ms;
+}
+
+.youtube:hover svg {
+  color: red;
 }

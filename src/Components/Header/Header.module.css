@@ -3,17 +3,10 @@
   width: 100%;
 }
 
-.header img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  filter: brightness(0.6);
-}
-
 .header h1 {
   position: absolute;
   left: 50%;
-  top: 66px;
+  top: 54px;
   transform: translateX(-50%);
   text-transform: uppercase;
   font-size: 20px;
@@ -47,7 +40,8 @@
   transform: translateX(-50%);
 }
 
-.link-box a {
+.link-box button {
+  cursor: pointer;
   color: #adadad;
   display: grid;
   justify-content: center;
@@ -58,12 +52,12 @@
   padding: 0.5rem 1.25rem 0 1.25rem;
 }
 
-.link-box a > svg {
+.link-box button > svg {
   margin: 3px 0 7px 0;
   justify-self: center;
   transition: all 400ms;
 }
 
-.link-box:hover a > svg {
+.link-box:hover button > svg {
   transform: translateY(3px);
 }
