@@ -1,7 +1,5 @@
 import { ArrowDown2 } from 'iconsax-react';
 import React from 'react';
-import { Link } from 'react-router-dom';
-import background from '../../Assets/col-background-first.png';
 import styles from './Header.module.css';
 
 const Header: React.FC = () => {

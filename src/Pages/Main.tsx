@@ -1,12 +1,10 @@
 import React from 'react';
-import background from '../Assets/col-background-first.png';
 import Header from '../Components/Header/Header';
 import styles from './Main.module.css';
 
 const Main: React.FC = () => {
   return (
     <div className={styles.main}>
-      <img src={background} height={'100%'} width={'100%'} alt='' />
       <Header />
       <section className={`${styles['first-section']} center`} id='idea'>
         <h1>ZACZNIJMY ROLEPLAY OD NOWA</h1>

@@ -35,3 +35,12 @@ code {
 .center {
   text-align: center;
 }
+
+.background {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(0.55);
+  position: fixed;
+  z-index: -1;
+}

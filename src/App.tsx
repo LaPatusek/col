@@ -1,5 +1,6 @@
 import { Fragment } from 'react';
 import { Route, Routes } from 'react-router-dom';
+import background from './Assets/col-background-first.png';
 import Footer from './Components/Footer/Footer';
 import Nav from './Components/Nav/Nav';
 import Kontakt from './Pages/Kontakt';
@@ -13,6 +14,7 @@ function App() {
       </nav>
 
       <main>
+      <img src={background} height={'100%'} width={'100%'} alt='' className='background'/>
         <Routes>
           <Route path='/' element={<Main />} />
           <Route path='/main' element={<Main />} />
