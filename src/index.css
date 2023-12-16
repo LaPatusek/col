@@ -1,7 +1,7 @@
 @import './css-reset.css';
 
 :root {
-  --main-blue: #00CBFF;
+  --main-blue: #00cbff;
   --text-gray: #666666;
   --text-whity: #adadad;
 }
@@ -43,4 +43,28 @@ code {
   filter: brightness(0.55);
   position: fixed;
   z-index: -1;
+}
+
+@font-face {
+  font-family: 'Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url(./Assets/BaiJamjuree-Regular.ttf) format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SemiBold';
+  font-style: normal;
+  font-weight: 600;
+  src: url(./Assets/BaiJamjuree-SemiBold.ttf) format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: url(./Assets/BaiJamjuree-Bold.ttf) format('truetype');
+  font-display: swap;
 }

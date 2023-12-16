@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import background from './Assets/col-background-first.png';
+import background from './Assets/col-background-first.webp';
 import Footer from './Components/Footer/Footer';
 import Nav from './Components/Nav/Nav';
 import Kontakt from './Pages/Kontakt';

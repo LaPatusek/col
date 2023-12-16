@@ -4,17 +4,34 @@
   left: 0;
   width: 100%;
   z-index: 18;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   justify-content: space-between;
   background-color: #000;
   border-bottom: 2px solid var(--main-blue);
-  padding: 5px 15px;
+  padding: 5px 30px;
+}
+
+.logo {
+  align-items: center;
 }
 
 .logo h1 {
-  font-size: 30px;
+  font-size: 1.5rem;
   color: var(--text-whity);
   user-select: none;
+  margin-left: 10px;
+  font-family: 'Bold';
+}
+
+.nav h2 {
+  font-size: 20px;
+  letter-spacing: 0.4px;
+  color: var(--text-gray);
+  text-transform: uppercase;
+  align-self: center;
+  text-align: center;
+  user-select: none;
+  font-family: 'Bold';
 }
 
 .hamburger {
@@ -23,6 +40,7 @@
   font-size: 30px;
   cursor: pointer;
   user-select: none;
+  font-family: 'Bold';
 }
 
 .hamburger svg {
@@ -78,7 +96,8 @@
   line-height: 40px;
   color: #fff;
   text-transform: uppercase;
-  letter-spacing: 0.6px;
+  letter-spacing: 0.4px;
+  font-family: 'SemiBold';
 }
 
 .socials {

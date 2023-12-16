@@ -1,6 +1,7 @@
 import { HambergerMenu, Youtube } from 'iconsax-react';
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
+import CityofLights from '../../Assets/col-logo.webp';
 import styles from './Nav.module.css';
 
 const Nav: React.FC = () => {
@@ -37,9 +38,12 @@ const Nav: React.FC = () => {
 
   return (
     <div className={`${styles.nav} grid`}>
-      <div className={styles.logo}>
+      <div className={`${styles.logo} flex`}>
+        <img src={CityofLights} alt='City of Lights' />
         <h1>City of Lights</h1>
       </div>
+
+      <h2>ZACZNIJMY ROLEPLAY OD NOWA</h2>
 
       <div className={styles.hamburger} onClick={MenuHandler}>
         Menu <HambergerMenu size={'25'} />

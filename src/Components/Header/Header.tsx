@@ -5,13 +5,12 @@ import styles from './Header.module.css';
 const Header: React.FC = () => {
   return (
     <div className={`${styles.header} relative`}>
-      <h1>Zacznijmy roleplay od nowa</h1>
       <div className={styles['middle-box']}>
-        <h2>
+        <h1>
           Nasza wizja pomimo wielu niedogodności nie zmieniła się dużo od
-          pierwotnej wersji serwera. <br /> Chcesz dowiedzieć się więcej? <br />{' '}
+          pierwotnej wersji serwera. <br /> Chcesz dowiedzieć się więcej? <br />
           Kliknij przycisk poniżej!
-        </h2>
+        </h1>
       </div>
       <div className={styles['link-box']}>
         <button

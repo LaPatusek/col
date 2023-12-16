@@ -7,7 +7,6 @@ const Main: React.FC = () => {
     <div className={styles.main}>
       <Header />
       <section className={`${styles['first-section']} center`} id='idea'>
-        <h1>ZACZNIJMY ROLEPLAY OD NOWA</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
           venenatis luctus ipsum. Nam quis fringilla lacus, sit amet sagittis

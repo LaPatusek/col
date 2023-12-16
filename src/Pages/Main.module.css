@@ -2,18 +2,10 @@
   padding: 10rem 0;
 }
 
-.first-section h1 {
-  font-size: 32px;
-  letter-spacing: 0.2px;
-  color: var(--text-gray);
-  text-transform: uppercase;
-  margin-bottom: 70px;
-  user-select: none;
-}
-
 .first-section p {
   padding: 50px;
   font-size: 32px;
+  font-family: 'SemiBold';
   line-height: 40px;
   letter-spacing: 0.4px;
   color: var(--text-whity);
