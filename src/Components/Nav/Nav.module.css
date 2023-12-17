@@ -115,15 +115,33 @@
 .socials a {
   width: fit-content;
   justify-self: center;
+  display: flex;
 }
 
 .socials svg {
-  justify-self: center;
+  align-self: center;
   cursor: pointer;
   color: #fff;
   transition: all 400ms;
 }
 
+.discord path {
+  transition: all 400ms;
+}
+
+.discord:hover path {
+  fill: #5865f2;
+}
+
 .youtube:hover svg {
-  color: red;
+  color: #e62117;
+}
+
+.twitter:hover svg {
+  filter: drop-shadow(2px 2px 5px rgb(255, 255, 255))
+}
+
+.tiktok:hover svg {
+  filter: drop-shadow(3px 3px 0px rgb(254, 43, 84))
+    drop-shadow(-3px -3px 0px rgb(37, 244, 237));
 }
