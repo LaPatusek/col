@@ -115,7 +115,6 @@
 .socials a {
   width: fit-content;
   justify-self: center;
-  display: flex;
 }
 
 .socials svg {

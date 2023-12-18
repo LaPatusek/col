@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
+import propImg from '../Assets/col-background-first.webp';
 import Header from '../Components/Header/Header';
 import styles from './Main.module.css';
 
 const Main: React.FC = () => {
+  const [activeBlock, setActiveBlock] = useState<string | null>(null);
+
+  const boxFunction = (boxName: string | null) => {
+    setActiveBlock(boxName === activeBlock ? null : boxName);
+  };
+
   return (
     <div className={styles.main}>
       <Header />
@@ -23,8 +30,75 @@ const Main: React.FC = () => {
           enim volutpat consequat. Lorem ipsum dolor sit amet, consectetur
           adipiscing elit. Donec dictum augue id eros efficitur, vitae interdum
           ligula faucibus. Etiam augue mauris, mattis eu fringilla vitae,
-          iaculis vestibulum lectus. Phasellus nec tortor eu{' '}
+          iaculis vestibulum lectus. Phasellus nec tortor eu
         </p>
+      </section>
+
+      <section className={styles['pick-side']}>
+        <h2>Wybierz drogę którą chcesz podążać:</h2>
+        <div className={styles['boxes']}>
+          <div
+            className={`${styles['left-box']} ${
+              activeBlock === 'left' ? styles['active-block'] : ''
+            }`}
+            onClick={() => boxFunction('left')}
+          >
+            <img src={propImg} alt='' width={'100%'} height={'100%'} />
+            <div className={styles['text-box']}>
+              <h3>Droga Cywilna</h3>
+              {activeBlock === 'left' && (
+                <p>
+                  Chciałbyś rozpocząć nową przygodę bez zobowiązań?
+                  <br /> Albo myślałeś nad założeniem własnej firmy?
+                  <br /> Dobrze trafiłeś, jako serwer przede wszystkim stawiamy
+                  nacisk na dobry roleplay, co za tym idzie wspieramy graczy
+                  takich jak Ty!
+                </p>
+              )}
+            </div>
+          </div>
+
+          <div
+            className={`${styles['mid-box']} ${
+              activeBlock === 'mid' ? styles['active-block'] : ''
+            }`}
+            onClick={() => boxFunction('mid')}
+          >
+            <img src={propImg} alt='' width={'100%'} height={'100%'} />
+            <div className={styles['text-box']}>
+              <h3>DROGA FRAKCYJNA</h3>
+              {activeBlock === 'mid' && (
+                <p>
+                  Chciałbyś słuzyć z doświadczonym zespołem? <br /> Znudziło ci
+                  się marudzenie na panujące zasady na innych serwerach?
+                  Jesteśmy doskonałą opcją, Law Enforcement oraz Healthcare
+                  System zaprojektowaliśmy tak żeby każdy znalazł coś dla
+                  siebie. <br /> Więcej informacji znajdziesz na naszym Discord.
+                </p>
+              )}
+            </div>
+          </div>
+
+          <div
+            className={`${styles['right-box']} ${
+              activeBlock === 'right' ? styles['active-block'] : ''
+            }`}
+            onClick={() => boxFunction('right')}
+          >
+            <img src={propImg} alt='' width={'100%'} height={'100%'} />
+            <div className={styles['text-box']}>
+              <h3>DROGA PRZESTĘPCZA</h3>
+              {activeBlock === 'right' && (
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat
+                </p>
+              )}
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   );

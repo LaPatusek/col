@@ -14,3 +14,101 @@
   background-color: #000;
   border-bottom: 1px solid var(--text-gray);
 }
+
+.pick-side {
+  padding: 4rem 0;
+}
+
+.pick-side h2 {
+  text-align: center;
+  color: var(--text-whity);
+  font-family: 'SemiBold';
+  font-size: 32px;
+  margin-bottom: 3.5rem;
+}
+
+.boxes {
+  position: relative;
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  height: 650px;
+}
+
+.text-box {
+  position: absolute;
+  width: 40%;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 101;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 10px 15px 8px 15px;
+  border-bottom: 2px solid var(--main-blue);
+  text-align: center;
+}
+
+.boxes h3 {
+  font-family: 'SemiBold';
+  font-size: 24px;
+  color: var(--main-blue);
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+}
+
+.boxes p {
+  min-width: 600px;
+  color: var(--text-whity);
+  font-size: 18px;
+  line-height: 27.5px;
+  font-family: 'Regular';
+}
+
+.left-box,
+.mid-box,
+.right-box {
+  cursor: pointer;
+  position: absolute;
+  height: 100%;
+  width: 33%;
+  transition: all 600ms;
+}
+
+.left-box img,
+.mid-box img,
+.right-box img {
+  filter: brightness(5) grayscale(1);
+  transition: all 600ms;
+}
+
+.left-box:hover img,
+.mid-box:hover img,
+.right-box:hover img {
+  filter: brightness(5) grayscale(0);
+}
+
+.left-box {
+  clip-path: polygon(0% 0%, 100% 0%, 85% 100%, 0% 100%, 0% 100%);
+  left: 4.825%;
+}
+
+.mid-box {
+  clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 85% 100%, 0% 100%);
+  left: 33.3%;
+}
+
+.right-box {
+  clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 100%);
+  left: calc(66.6% - 4.825%);
+}
+
+.active-block {
+  width: 90%;
+  z-index: 99;
+  clip-path: none;
+  left: 4.825%;
+}
+
+.active-block img {
+  filter: brightness(5) grayscale(0);
+}

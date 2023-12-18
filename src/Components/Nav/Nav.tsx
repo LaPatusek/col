@@ -86,14 +86,14 @@ const Nav: React.FC = () => {
             </div>
 
             <div className={styles.link}>
-              <Link to='/' onClick={MenuHandler}>
+              <Link to='/regulamin' onClick={MenuHandler}>
                 Regulamin
               </Link>
             </div>
           </div>
 
           <div className={`${styles.socials} grid`} ref={thirdRef}>
-            <a href='asd' className={styles.discord}>
+            <a href='asd' className={`${styles.discord} flex`}>
               <svg
                 width={40}
                 height={40}
@@ -111,10 +111,10 @@ const Nav: React.FC = () => {
                 </g>
               </svg>
             </a>
-            <a href='asd' className={styles.youtube}>
+            <a href='asd' className={`${styles.youtube} flex`}>
               <Youtube size={43} />
             </a>
-            <a href='asd' className={styles.twitter}>
+            <a href='asd' className={`${styles.twitter} flex`}>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 shape-rendering='geometricPrecision'
@@ -133,7 +133,7 @@ const Nav: React.FC = () => {
                 />
               </svg>
             </a>
-            <a href='asd' className={styles.tiktok}>
+            <a href='asd' className={`${styles.tiktok} flex`}>
               <svg
                 fill='#fff'
                 width={37}
