@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import propImg from '../Assets/col-background-first.webp';
+import civil from '../Assets/col-background-civil.webp';
+import crime from '../Assets/col-background-crime.webp';
+import fraction from '../Assets/col-background-fractions.webp';
 import Header from '../Components/Header/Header';
 import styles from './Main.module.css';
 
@@ -42,7 +44,7 @@ const Main: React.FC = () => {
             }`}
             onClick={() => boxFunction('left')}
           >
-            <img src={propImg} alt='' width={'100%'} height={'100%'} />
+            <img src={civil} alt='' width={'100%'} height={'100%'} />
             <div className={styles['text-box']}>
               <h3>
                 Droga <br /> Cywilna
@@ -68,7 +70,7 @@ const Main: React.FC = () => {
             }`}
             onClick={() => boxFunction('mid')}
           >
-            <img src={propImg} alt='' width={'100%'} height={'100%'} />
+            <img src={fraction} alt='' width={'100%'} height={'100%'} />
             <div className={styles['text-box']}>
               <h3>DROGA FRAKCYJNA</h3>
               {activeBlock === 'mid' && (
@@ -92,7 +94,7 @@ const Main: React.FC = () => {
             }`}
             onClick={() => boxFunction('right')}
           >
-            <img src={propImg} alt='' width={'100%'} height={'100%'} />
+            <img src={crime} alt='' width={'100%'} height={'100%'} />
             <div className={styles['text-box']}>
               <h3>DROGA PRZESTĘPCZA</h3>
               {activeBlock === 'right' && (
