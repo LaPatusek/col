@@ -13,6 +13,7 @@
   margin: 0 auto;
   background-color: #000;
   border-bottom: 1px solid var(--text-gray);
+  filter: opacity(0.85);
 }
 
 .pick-side {
@@ -37,9 +38,11 @@
 .text-box {
   position: absolute;
   width: 40%;
-  top: 25%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  max-width: 600px;
+  top: 50%;
+  left: 5%;
+  /* left: 7%; tyle ma być po kliknięciu  */
+  transform: translateY(-50%);
   z-index: 101;
   background-color: rgba(0, 0, 0, 0.75);
   padding: 10px 15px 8px 15px;
@@ -50,14 +53,13 @@
 .boxes h3 {
   font-family: 'SemiBold';
   font-size: 24px;
-  color: var(--main-blue);
-  margin-bottom: 15px;
+  color: #fff;
+  margin-bottom: 5px;
   text-transform: uppercase;
   letter-spacing: 0.2px;
 }
 
 .boxes p {
-  min-width: 600px;
   color: var(--text-whity);
   font-size: 18px;
   line-height: 27.5px;
@@ -72,43 +74,65 @@
   height: 100%;
   width: 33%;
   transition: all 600ms;
+  filter: grayscale(1) opacity(0.7);
+  clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 85% 100%, 0% 100%);
+}
+
+.left-box:hover,
+.mid-box:hover,
+.right-box:hover {
+  filter: grayscale(0);
 }
 
 .left-box img,
 .mid-box img,
 .right-box img {
-  filter: brightness(5) grayscale(1);
+  filter: brightness(5);
   transition: all 600ms;
 }
 
-.left-box:hover img,
-.mid-box:hover img,
-.right-box:hover img {
-  filter: brightness(5) grayscale(0);
-}
-
 .left-box {
-  clip-path: polygon(0% 0%, 100% 0%, 85% 100%, 0% 100%, 0% 100%);
   left: 4.825%;
 }
 
 .mid-box {
-  clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 85% 100%, 0% 100%);
   left: 33.3%;
 }
 
 .right-box {
-  clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 100%);
   left: calc(66.6% - 4.825%);
 }
 
 .active-block {
-  width: 90%;
+  height: 94.5vh;
+  width: 100%;
   z-index: 99;
   clip-path: none;
-  left: 4.825%;
+  left: 0;
+  top: -143px;
+}
+
+.active-block {
+  filter: grayscale(0);
 }
 
 .active-block img {
-  filter: brightness(5) grayscale(0);
+  object-fit: cover;
+}
+
+.join {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
+  z-index: 120;
+  background-color: #000;
+  color: #fff;
+  border-bottom: 2px solid var(--main-blue);
+  font-family: 'Bold';
+  text-transform: uppercase;
+  padding: 10px 20px;
+  font-size: 18px;
+  filter: opacity(0.85);
+  cursor: pointer;
 }

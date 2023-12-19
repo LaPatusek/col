@@ -15,22 +15,21 @@ const Main: React.FC = () => {
       <Header />
       <section className={`${styles['first-section']} center`} id='idea'>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-          venenatis luctus ipsum. Nam quis fringilla lacus, sit amet sagittis
-          ligula. Vestibulum ullamcorper tortor vitae quam ullamcorper
-          ultricies. Nam vel malesuada lorem. Cras nisl ligula, semper id nisl
-          non, placerat tempor nulla. Maecenas eget viverra sem, vel lacinia
-          lorem. Vivamus vestibulum magna ipsum, eu tincidunt turpis porta nec.
-          Vestibulum quis sem et ipsum facilisis maximus fringilla sed enim. Ut
-          risus urna, finibus vitae leo eget, posuere mattis elit. Aenean et
-          purus rutrum, tincidunt nibh sed, accumsan lorem. Nulla vulputate
-          hendrerit diam, eu semper est posuere vel. Sed leo ipsum, vehicula ac
-          libero id, sagittis pellentesque ipsum. Interdum et malesuada fames ac
-          ante ipsum primis in faucibus. Nullam a massa dui. Sed pharetra mi non
-          enim volutpat consequat. Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit. Donec dictum augue id eros efficitur, vitae interdum
-          ligula faucibus. Etiam augue mauris, mattis eu fringilla vitae,
-          iaculis vestibulum lectus. Phasellus nec tortor eu
+          Roleplay w świecie GTA 5, w naszym kraju pojawił się w 2018 roku i od
+          początku robił furorę wśród graczy, rok do roku zrzeszając coraz
+          większą społeczność. Wraz ze wzrostem community GTA RP, zaczęła
+          zwiększać się baza serwerów oferujących coraz ciekawsze lokacje,
+          przedmioty, czy skrypty… <br /> Z czasem gracze zaczęli migrować
+          między serwerami w poszukiwaniu “czegoś nowego”, tracąc przy tym
+          ciągłość wątków oraz konsekwencje w prowadzeniu swojej historii,
+          często wpływając tym na innych graczy. W konsekwencji granie roli w
+          wyimaginowanym zeszło na drugi plan na rzecz deathmatch'ów oraz
+          nieustannej walki crime kontra służby. Fun z przygód naszego własnego
+          “bohatera” ustąpił miejsca napince i tryhardowaniu… <br /> Gdzie się
+          podział roleplay? <br /> Nasz projekt powstał po to, aby przypomnieć
+          graczom, za co pokochali GTA, aby pokazać w pełni możliwości, jakie
+          oferuje FiveM oraz dać Wam możliwość stworzenia własnej historii.
+          <br /> Zacznijmy Roleplay na nowo!
         </p>
       </section>
 
@@ -45,7 +44,9 @@ const Main: React.FC = () => {
           >
             <img src={propImg} alt='' width={'100%'} height={'100%'} />
             <div className={styles['text-box']}>
-              <h3>Droga Cywilna</h3>
+              <h3>
+                Droga <br /> Cywilna
+              </h3>
               {activeBlock === 'left' && (
                 <p>
                   Chciałbyś rozpocząć nową przygodę bez zobowiązań?
@@ -56,6 +57,9 @@ const Main: React.FC = () => {
                 </p>
               )}
             </div>
+            {activeBlock === 'left' && (
+              <div className={styles.join}>dołącz już dziś</div>
+            )}
           </div>
 
           <div
@@ -77,6 +81,9 @@ const Main: React.FC = () => {
                 </p>
               )}
             </div>
+            {activeBlock === 'mid' && (
+              <div className={styles.join}>dołącz już dziś</div>
+            )}
           </div>
 
           <div
@@ -97,6 +104,9 @@ const Main: React.FC = () => {
                 </p>
               )}
             </div>
+            {activeBlock === 'right' && (
+              <div className={styles.join}>dołącz już dziś</div>
+            )}
           </div>
         </div>
       </section>
