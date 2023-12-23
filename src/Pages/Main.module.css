@@ -144,3 +144,56 @@
   filter: opacity(0.85);
   cursor: pointer;
 }
+
+@media screen and (max-width: 900px) {
+  .first-section p {
+    width: 95%;
+    padding: 20px;
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .pick-side {
+    padding: 4rem 0 3rem 0;
+  }
+
+  .boxes {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 5px;
+  }
+
+  .left-box,
+  .mid-box,
+  .right-box {
+    position: relative;
+    width: 100%;
+    left: 0;
+    filter: grayscale(0);
+    clip-path: none;
+  }
+
+  .text-box h3 {
+    font-size: 20px;
+  }
+
+  .active-block {
+    position: absolute;
+    height: 78dvh;
+    width: 100%;
+    z-index: 99;
+    left: 0;
+    top: 0;
+  }
+
+  .active-block > .text-box {
+    width: 95%;
+    left: 2.5%;
+    top: unset;
+    bottom: 45%;
+    transform: translateY(50%);
+  }
+
+  .join {
+    bottom: 18%;
+  }
+}

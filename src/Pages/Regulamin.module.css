@@ -25,3 +25,9 @@
   font-family: 'SemiBold';
   text-align: center;
 }
+
+@media screen and (max-width: 900px) {
+  .regulamin-wrap h1 {
+    font-size: 28px;
+  }
+}

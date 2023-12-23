@@ -68,7 +68,7 @@ const Nav: React.FC = () => {
             </div>
 
             <div className={styles.link}>
-              <Link to='/' onClick={MenuHandler}>
+              <Link to='#idea' onClick={MenuHandler}>
                 Idea projektu
               </Link>
             </div>

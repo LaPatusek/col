@@ -52,3 +52,15 @@
 .link-box:hover button > svg {
   transform: translateY(3px);
 }
+
+@media screen and (max-width: 900px) {
+  .header {
+    width: 100vw;
+    margin: 0 auto;
+  }
+
+  .middle-box {
+    width: 95%;
+    padding: 1.25rem 2rem 1rem 2rem;
+  }
+}

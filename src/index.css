@@ -42,6 +42,7 @@ code {
   object-fit: cover;
   filter: brightness(0.55);
   position: fixed;
+  display: flex;
   z-index: -1;
 }
 

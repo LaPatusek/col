@@ -1,13 +1,29 @@
-import { Fragment } from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Fragment, useEffect } from 'react';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import background from './Assets/col-background-first.webp';
 import Footer from './Components/Footer/Footer';
 import Nav from './Components/Nav/Nav';
-import Regulamin from './Components/Nav/Regulamin';
 import Kontakt from './Pages/Kontakt';
 import Main from './Pages/Main';
+import Regulamin from './Pages/Regulamin';
 
 function App() {
+  const { pathname, hash, key } = useLocation();
+
+  useEffect(() => {
+    if (hash === '') {
+      window.scrollTo(0, 0);
+    } else {
+      setTimeout(() => {
+        const id = hash.replace('#', '');
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView();
+        }
+      }, 0);
+    }
+  }, [pathname, hash, key]);
+
   return (
     <Fragment>
       <nav>
