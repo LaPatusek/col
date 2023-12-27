@@ -71,10 +71,12 @@
 }
 
 .exit-btn {
+  width: fit-content;
+  height: fit-content;
   justify-self: right;
   color: white;
   font-size: 30px;
-  padding: 5px 15px;
+  margin: 5px 30px;
   cursor: pointer;
 }
 

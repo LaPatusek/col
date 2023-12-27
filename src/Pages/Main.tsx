@@ -36,7 +36,7 @@ const Main: React.FC = () => {
       </section>
 
       <section className={styles['pick-side']}>
-        <h2>Wybierz drogę którą chcesz podążać:</h2>
+        <h2>Wybierz drogę, którą chcesz podążać:</h2>
         <div className={styles['boxes']}>
           <div
             className={`${styles['left-box']} ${
