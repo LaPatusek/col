@@ -35,7 +35,7 @@ function App() {
           src={background}
           height={'100%'}
           width={'100%'}
-          alt=''
+          alt='City of Lights - Polski Serwer GTA RP'
           className='background'
         />
         <Routes>

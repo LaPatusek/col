@@ -80,6 +80,10 @@
   cursor: pointer;
 }
 
+.exit-btn svg {
+  rotate: 45deg;
+}
+
 .menu-links {
   align-self: flex-start;
   justify-content: center;
@@ -152,10 +156,13 @@
     drop-shadow(-3px -3px 0px rgb(37, 244, 237));
 }
 
-
 @media screen and (max-width: 900px) {
   .nav {
     padding: 5px 10px;
+  }
+
+  .exit-btn {
+    margin: 5px 10px;
   }
 
   .active-menu {

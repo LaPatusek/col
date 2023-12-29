@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
 
       <img
         src={CityofLights}
-        alt='City of Lights'
+        alt='City of Lights - Polski Serwer GTA RolePlay'
         height={'32px'}
         width={'32px'}
       />
