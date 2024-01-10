@@ -3,7 +3,8 @@
 }
 
 .first-section p {
-  padding: 50px;
+  display: grid;
+  padding: 50px 50px 40px 50px;
   font-size: 32px;
   font-family: 'SemiBold';
   line-height: 40px;
@@ -14,6 +15,20 @@
   background-color: #000;
   border-bottom: 1px solid var(--text-gray);
   filter: opacity(0.85);
+}
+
+.first-section p > a {
+  margin: 15px auto 0 auto;
+  width: fit-content;
+  font-size: 36px;
+  color: var(--main-blue);
+  font-family: 'SemiBold';
+  transition: all 400ms;
+  text-decoration: underline transparent;
+}
+
+.first-section p > a:hover {
+  text-decoration: underline var(--main-blue);
 }
 
 .pick-side {
@@ -41,7 +56,6 @@
   max-width: 600px;
   top: 50%;
   left: 5%;
-  /* left: 7%; tyle ma być po kliknięciu  */
   transform: translateY(-50%);
   z-index: 101;
   background-color: rgba(0, 0, 0, 0.75);
@@ -129,20 +143,29 @@
 }
 
 .join {
+  display: flex;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   bottom: 10px;
   z-index: 120;
   background-color: #000;
-  color: #fff;
   border-bottom: 2px solid var(--main-blue);
+  filter: opacity(0.85);
+  text-align: center;
+}
+
+.join a {
+  color: #fff;
   font-family: 'Bold';
   text-transform: uppercase;
   padding: 10px 20px;
   font-size: 18px;
-  filter: opacity(0.85);
-  cursor: pointer;
+  transition: all 400ms;
+}
+
+.join:hover a {
+  color: var(--main-blue);
 }
 
 @media screen and (max-width: 900px) {
@@ -203,6 +226,5 @@
 
   .join {
     bottom: 3.5%;
-    text-align: center;
   }
 }

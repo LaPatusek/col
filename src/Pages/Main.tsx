@@ -32,6 +32,8 @@ const Main: React.FC = () => {
           GTA, aby pokazać w pełni możliwości, jakie oferuje FiveM oraz dać Wam
           możliwość stworzenia własnej historii.
           <br /> Zacznijmy Roleplay na nowo!
+          <br />
+          <a href='asdas'>Dołącz już dziś!</a>
         </p>
       </section>
 
@@ -65,7 +67,9 @@ const Main: React.FC = () => {
               )}
             </div>
             {activeBlock === 'left' && (
-              <div className={styles.join}>dołącz już dziś</div>
+              <div className={styles.join}>
+                <a href='aa'>dołącz już dziś</a>
+              </div>
             )}
           </div>
 
@@ -94,7 +98,9 @@ const Main: React.FC = () => {
               )}
             </div>
             {activeBlock === 'mid' && (
-              <div className={styles.join}>dołącz już dziś</div>
+              <div className={styles.join}>
+                <a href='aa'>dołącz już dziś</a>
+              </div>
             )}
           </div>
 
@@ -122,7 +128,9 @@ const Main: React.FC = () => {
               )}
             </div>
             {activeBlock === 'right' && (
-              <div className={styles.join}>dołącz już dziś</div>
+              <div className={styles.join}>
+                <a href='aa'>dołącz już dziś</a>
+              </div>
             )}
           </div>
         </div>
