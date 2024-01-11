@@ -13,22 +13,26 @@
 }
 
 .regulamin {
-  width: 70%;
+  max-width: 800px;
   margin: 0 auto;
-  padding: 4rem 0;
+  padding: 4rem 0 0 0;
 }
 
-.regulamin p {
-  font-size: 28px;
-  line-height: 30.5px;
-  color: var(--text-whity);
-  letter-spacing: 0.2px;
-  font-family: 'SemiBold';
-  text-align: center;
+.regulamin iframe {
+  width: 100%;
+  height: 6000px;
 }
 
 @media screen and (max-width: 900px) {
   .regulamin-wrap h1 {
     font-size: 28px;
+  }
+
+  .regulamin {
+    max-width: 100%;
+  }
+
+  .regulamin iframe {
+    width: 100%;
   }
 }
