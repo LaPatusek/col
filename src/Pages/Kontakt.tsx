@@ -28,10 +28,10 @@ const Kontakt: React.FC = () => {
       <div className={`${styles['right-section']} grid center`}>
         <h4>Zacznijmy roleplay od nowa</h4>
         <p>
-          Podane kontakty będą rozpoczynały konwersacje jeśli sytuacja będzie
-          tego wymagać. Jeżeli czujecie że sytuacja nie jest na tyle pilna aby
-          kontaktować się prywatnie z danymi osobami zarządzającymi, prosimy
-          abyście utworzyli ticket na kanale discord naszego projektu. <br />
+          Podane kontakty będą rozpoczynały konwersacje, jeśli sytuacja będzie
+          tego wymagać. Jeżeli czujecie, że sytuacja nie jest na tyle pilna, aby
+          kontaktować się prywatnie z danymi osobami zarządzającymi, prosimy,
+          abyście utworzyli ticket na kanale Discord naszego projektu. <br />
           Dziękujemy za wyrozumiałość!
         </p>
       </div>

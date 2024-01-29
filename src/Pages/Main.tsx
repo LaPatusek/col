@@ -33,7 +33,13 @@ const Main: React.FC = () => {
           możliwość stworzenia własnej historii.
           <br /> Zacznijmy Roleplay na nowo!
           <br />
-          <a href='asdas'>Dołącz już dziś!</a>
+          <a
+            href='https://discord.gg/YnKSvfVJH9'
+            target='_blank'
+            rel='noreferrer'
+          >
+            Dołącz już dziś!
+          </a>
         </p>
       </section>
 
@@ -68,7 +74,13 @@ const Main: React.FC = () => {
             </div>
             {activeBlock === 'left' && (
               <div className={styles.join}>
-                <a href='aa'>dołącz już dziś</a>
+                <a
+                  href='https://discord.gg/YnKSvfVJH9'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  Dołącz już dziś
+                </a>
               </div>
             )}
           </div>
@@ -99,7 +111,13 @@ const Main: React.FC = () => {
             </div>
             {activeBlock === 'mid' && (
               <div className={styles.join}>
-                <a href='aa'>dołącz już dziś</a>
+                <a
+                  href='https://discord.gg/YnKSvfVJH9'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  Dołącz już dziś
+                </a>
               </div>
             )}
           </div>
@@ -129,7 +147,13 @@ const Main: React.FC = () => {
             </div>
             {activeBlock === 'right' && (
               <div className={styles.join}>
-                <a href='aa'>dołącz już dziś</a>
+                <a
+                  href='https://discord.gg/YnKSvfVJH9'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  Dołącz już dziś
+                </a>
               </div>
             )}
           </div>

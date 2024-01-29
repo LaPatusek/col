@@ -9,7 +9,10 @@ const Regulamin: React.FC = () => {
     <div className={styles['regulamin-wrap']}>
       <h1>REGULAMIN SERWERA CITY OF LIGHTS</h1>
       <div className={styles.regulamin}>
-        <iframe src={documentURL} title='Regulamin Serwera City of Lights' />
+        <iframe
+          src={documentURL}
+          title='Regulamin Serwera City of Lights'
+        />
       </div>
     </div>
   );
