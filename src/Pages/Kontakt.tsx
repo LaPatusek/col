@@ -31,7 +31,15 @@ const Kontakt: React.FC = () => {
           Podane kontakty będą rozpoczynały konwersacje, jeśli sytuacja będzie
           tego wymagać. Jeżeli czujecie, że sytuacja nie jest na tyle pilna, aby
           kontaktować się prywatnie z danymi osobami zarządzającymi, prosimy,
-          abyście utworzyli ticket na kanale Discord naszego projektu. <br />
+          abyście utworzyli ticket na kanale{' '}
+          <a
+            href='https://discord.gg/YnKSvfVJH9'
+            target='_blank'
+            rel='noreferrer'
+          >
+            Discord
+          </a>{' '}
+          naszego projektu. <br />
           Dziękujemy za wyrozumiałość!
         </p>
       </div>

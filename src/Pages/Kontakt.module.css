@@ -64,6 +64,11 @@
   padding: 30px 55px;
 }
 
+.right-section p > a {
+  color: var(--main-blue);
+  font-family: 'SemiBold';
+}
+
 @media screen and (max-width: 900px) {
   .kontakt {
     padding-top: 4rem;
@@ -74,7 +79,6 @@
 
   .left-section {
     width: 100%;
-    
   }
 
   .left-section h1 {
