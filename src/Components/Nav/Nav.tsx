@@ -36,7 +36,7 @@ const Nav: React.FC = () => {
 
   return (
     <div className={`${styles.nav} grid`}>
-      <div className={`${styles.logo} flex`}>
+      <Link to='/' className={`${styles.logo} flex`}>
         <img
           src={CityofLights}
           alt='City of Lights - Polski Serwer GTA RolePlay'
@@ -44,7 +44,7 @@ const Nav: React.FC = () => {
           width={'34px'}
         />
         <h1>City of Lights</h1>
-      </div>
+      </Link>
 
       <h2>"ZACZNIJMY ROLEPLAY OD NOWA"</h2>
 

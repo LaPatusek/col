@@ -1,6 +1,6 @@
 .kontakt {
   grid-template-columns: repeat(2, 1fr);
-  height: 100dvh;
+  height: calc(100dvh - 42px);
 }
 
 .left-section {
@@ -13,7 +13,7 @@
 .left-section h1 {
   justify-self: center;
   border-bottom: 1px solid var(--main-blue);
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.75);
   width: 420px;
   padding: 10px 0;
   font-size: 20px;
@@ -25,7 +25,7 @@
 
 .container {
   width: 590px;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.75);
   border-bottom: 1px solid var(--text-gray);
   margin-bottom: 25px;
 }
@@ -60,7 +60,7 @@
   letter-spacing: 0.3px;
   color: var(--text-whity);
   border-bottom: 1px solid var(--text-gray);
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.75);
   padding: 30px 55px;
 }
 

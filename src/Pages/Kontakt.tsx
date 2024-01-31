@@ -13,8 +13,8 @@ const Kontakt: React.FC = () => {
         </div>
         <div className={styles.container}>
           <h3>
-            Administracja: <br />
-            XYZ
+            Administrator: <br />
+            Sejko
           </h3>
         </div>
         <div className={styles.container}>
